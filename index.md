@@ -10,6 +10,10 @@ By Henry Teo
 
 *Start with what still feels wrong when we use AI, and work backwards to where we should put our attention next.*
 
+<figure class="article-cover">
+  <img src="{{ '/assets/images/nine-gates.png' | relative_url }}" alt="Nine numbered gates in a stone wall, surrounded by a misty forest and colorful trees.">
+</figure>
+
 Has AGI arrived? Every model upgrade brings the argument back. I care more about a concrete question: it can already solve so many hard problems, so why do I still have to take the work back so often after handing over a whole task?
 
 You ask it to change some code. It fixes A and breaks B. You ask it to complete a project. It carries out many steps without noticing that it has gone off course. When you open the final result, you still have to decide what you can use and what needs to be redone.

@@ -92,6 +92,16 @@ section {
   padding: 0;
 }
 
+.article-cover {
+  margin: 0 0 2.2rem;
+}
+
+.article-cover img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 section h1, section h2, section h3 {
   color: #222;
   font-family: Georgia, serif;
