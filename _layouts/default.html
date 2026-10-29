@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="{{ page.lang | default: 'en' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | default: site.title | escape }} — Henry Teo</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v={{ site.github.build_revision }}">
+</head>
+<body>
+  <main class="wrapper">
+    <nav class="language-switch" aria-label="Language / 语言">
+      <a href="{{ '/' | relative_url }}" lang="en"{% if page.lang != 'zh-CN' %} aria-current="page"{% endif %}>English</a>
+      <a href="{{ '/zh/' | relative_url }}" lang="zh-CN"{% if page.lang == 'zh-CN' %} aria-current="page"{% endif %}>中文</a>
+    </nav>
+    <section>
+      {{ content }}
+    </section>
+  </main>
+</body>
+</html>

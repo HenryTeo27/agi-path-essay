@@ -1,5 +1,7 @@
 ---
 layout: default
+lang: en
+title: "AGI Path: The Doors We Haven’t Opened Yet"
 ---
 
 # AGI Path: The Doors We Haven’t Opened Yet

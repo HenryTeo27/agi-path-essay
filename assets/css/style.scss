@@ -32,6 +32,39 @@ body {
   display: none;
 }
 
+.language-switch {
+  display: flex;
+  gap: 4px;
+  width: fit-content;
+  padding: 3px;
+  margin: 0 0 36px;
+  border: 1px solid #d8d5ce;
+  border-radius: 8px;
+  font: 500 0.85rem/1.2 system-ui, sans-serif;
+}
+
+.language-switch a {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 5px;
+  color: #555;
+  text-decoration: none;
+}
+
+.language-switch a[aria-current="page"] {
+  background: #e8e6df;
+  color: #222;
+}
+
+.language-switch a:focus-visible {
+  outline: 2px solid #345d81;
+  outline-offset: 2px;
+}
+
+html:lang(zh-CN) section {
+  font-family: Georgia, "Microsoft YaHei", "PingFang SC", sans-serif;
+}
+
 section {
   float: none;
   width: auto;
