@@ -15,11 +15,13 @@
         <span aria-hidden="true">·</span>
         <a href="https://henryteo.substack.com/p/agi-path-the-doors-we-havent-opened">Substack</a>
         <span aria-hidden="true">·</span>
-        <a href="https://github.com/HenryTeo27/agi-path-essay/blob/main/manuscript.txt">Manuscript</a>
+        <a href="{{ '/manuscript/' | relative_url }}"{% if page.version == 'manuscript' %} aria-current="page"{% endif %}>Manuscript</a>
+        <span aria-hidden="true">·</span>
+        <a href="{{ '/draft/' | relative_url }}"{% if page.version == 'draft' %} aria-current="page"{% endif %}>Draft</a>
       </nav>
       <nav class="language-switch" aria-label="Language / 语言">
-        <a href="{{ '/' | relative_url }}" lang="en"{% if page.lang != 'zh-CN' %} aria-current="page"{% endif %}>English</a>
-        <a href="{{ '/zh/' | relative_url }}" lang="zh-CN"{% if page.lang == 'zh-CN' %} aria-current="page"{% endif %}>中文</a>
+        <a href="{{ '/' | relative_url }}" lang="en"{% if page.lang == 'en' and page.version == nil %} aria-current="page"{% endif %}>English</a>
+        <a href="{{ '/zh/' | relative_url }}" lang="zh-CN"{% if page.lang == 'zh-CN' and page.version == nil %} aria-current="page"{% endif %}>中文</a>
       </nav>
     </div>
     <section>

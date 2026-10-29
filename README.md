@@ -13,5 +13,5 @@ The full essay, references, and appendices are available on GitHub Pages in both
 
 ## Earlier versions (Chinese)
 
-- [Manuscript — original draft](manuscript.txt)
-- [Draft — lightly edited version](draft.md)
+- [Manuscript — read online](https://henryteo27.github.io/agi-path-essay/manuscript/) · [original TXT](manuscript.txt)
+- [Draft — read online](https://henryteo27.github.io/agi-path-essay/draft/) · [original Markdown](draft.md)

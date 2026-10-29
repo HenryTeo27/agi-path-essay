@@ -90,6 +90,11 @@ body {
   outline-offset: 2px;
 }
 
+.publication-links a[aria-current="page"] {
+  color: #222;
+  font-weight: 600;
+}
+
 html:lang(zh-CN) section {
   font-family: Georgia, "Microsoft YaHei", "PingFang SC", sans-serif;
 }
@@ -174,12 +179,29 @@ section pre {
   white-space: pre;
 }
 
+section pre.manuscript-text {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font-family: inherit;
+  font-size: 1.15rem;
+  line-height: 1.8;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
 @media (max-width: 600px) {
   .wrapper {
     padding-top: 20px;
   }
 
   section p, section li {
+    font-size: 1.05rem;
+  }
+
+  section pre.manuscript-text {
     font-size: 1.05rem;
   }
 }
