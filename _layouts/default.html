@@ -9,11 +9,13 @@
 <body>
   <main class="wrapper">
     <div class="page-tools">
-      <nav class="publication-links" aria-label="{% if page.lang == 'zh-CN' %}英文版的其他平台{% else %}Read the English version elsewhere{% endif %}">
-        <span>{% if page.lang == 'zh-CN' %}英文版也在{% else %}Also on{% endif %}</span>
+      <nav class="publication-links" aria-label="{% if page.lang == 'zh-CN' %}文章其他版本{% else %}Other versions of the essay{% endif %}">
+        <span>{% if page.lang == 'zh-CN' %}其他版本{% else %}Also on{% endif %}</span>
         <a href="https://medium.com/@eehern27/agi-path-the-doors-we-havent-opened-yet-d49717fc53b7">Medium</a>
         <span aria-hidden="true">·</span>
         <a href="https://henryteo.substack.com/p/agi-path-the-doors-we-havent-opened">Substack</a>
+        <span aria-hidden="true">·</span>
+        <a href="https://github.com/HenryTeo27/agi-path-essay/blob/main/manuscript.txt">Manuscript</a>
       </nav>
       <nav class="language-switch" aria-label="Language / 语言">
         <a href="{{ '/' | relative_url }}" lang="en"{% if page.lang != 'zh-CN' %} aria-current="page"{% endif %}>English</a>
