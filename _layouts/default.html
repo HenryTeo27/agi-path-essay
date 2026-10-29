@@ -8,16 +8,18 @@
 </head>
 <body>
   <main class="wrapper">
-    <nav class="language-switch" aria-label="Language / 语言">
-      <a href="{{ '/' | relative_url }}" lang="en"{% if page.lang != 'zh-CN' %} aria-current="page"{% endif %}>English</a>
-      <a href="{{ '/zh/' | relative_url }}" lang="zh-CN"{% if page.lang == 'zh-CN' %} aria-current="page"{% endif %}>中文</a>
-    </nav>
-    <nav class="publication-links" aria-label="{% if page.lang == 'zh-CN' %}英文版的其他平台{% else %}Read the English version elsewhere{% endif %}">
-      <span>{% if page.lang == 'zh-CN' %}英文版也在{% else %}Also on{% endif %}</span>
-      <a href="https://medium.com/@eehern27/agi-path-the-doors-we-havent-opened-yet-d49717fc53b7">Medium</a>
-      <span aria-hidden="true">·</span>
-      <a href="https://henryteo.substack.com/p/agi-path-the-doors-we-havent-opened">Substack</a>
-    </nav>
+    <div class="page-tools">
+      <nav class="publication-links" aria-label="{% if page.lang == 'zh-CN' %}英文版的其他平台{% else %}Read the English version elsewhere{% endif %}">
+        <span>{% if page.lang == 'zh-CN' %}英文版也在{% else %}Also on{% endif %}</span>
+        <a href="https://medium.com/@eehern27/agi-path-the-doors-we-havent-opened-yet-d49717fc53b7">Medium</a>
+        <span aria-hidden="true">·</span>
+        <a href="https://henryteo.substack.com/p/agi-path-the-doors-we-havent-opened">Substack</a>
+      </nav>
+      <nav class="language-switch" aria-label="Language / 语言">
+        <a href="{{ '/' | relative_url }}" lang="en"{% if page.lang != 'zh-CN' %} aria-current="page"{% endif %}>English</a>
+        <a href="{{ '/zh/' | relative_url }}" lang="zh-CN"{% if page.lang == 'zh-CN' %} aria-current="page"{% endif %}>中文</a>
+      </nav>
+    </div>
     <section>
       {{ content }}
     </section>

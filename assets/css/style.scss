@@ -25,11 +25,20 @@ body {
   width: auto;
   max-width: 720px;
   margin: 0 auto;
-  padding: 72px 24px 100px;
+  padding: 24px 24px 100px;
 }
 
 .wrapper > header, .wrapper > footer {
   display: none;
+}
+
+.page-tools {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px 16px;
+  margin-bottom: 36px;
 }
 
 .language-switch {
@@ -37,7 +46,7 @@ body {
   gap: 4px;
   width: fit-content;
   padding: 3px;
-  margin: 0 0 14px;
+  margin: 0 0 0 auto;
   border: 1px solid #d8d5ce;
   border-radius: 8px;
   font: 500 0.85rem/1.2 system-ui, sans-serif;
@@ -65,7 +74,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5em;
-  margin: 0 0 36px;
+  margin: 0;
   color: #666;
   font: 0.85rem/1.5 system-ui, sans-serif;
 }
@@ -167,7 +176,7 @@ section pre {
 
 @media (max-width: 600px) {
   .wrapper {
-    padding-top: 42px;
+    padding-top: 20px;
   }
 
   section p, section li {
