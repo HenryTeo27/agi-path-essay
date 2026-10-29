@@ -10,3 +10,8 @@ An essay by Henry Teo about the capabilities that may still hold AI back from co
 - [Substack — English](https://henryteo.substack.com/p/agi-path-the-doors-we-havent-opened)
 
 The full essay, references, and appendices are available on GitHub Pages in both languages.
+
+## Earlier versions (Chinese)
+
+- [Manuscript — original draft](manuscript.txt)
+- [Draft — lightly edited version](draft.md)
