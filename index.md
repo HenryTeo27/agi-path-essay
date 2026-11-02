@@ -14,37 +14,53 @@ By Henry Teo
   <img src="{{ '/assets/images/nine-gates.png' | relative_url }}" alt="Nine numbered gates in a stone wall, surrounded by a misty forest and colorful trees.">
 </figure>
 
-Has AGI arrived? Every model upgrade brings the argument back. I care more about a concrete question: it can already solve so many hard problems, so why do I still have to take the work back so often after handing over a whole task?
+Has AGI arrived? From GPT-3.5 to today, every change at the top brings this argument back.
 
-You ask it to change some code. It fixes A and breaks B. You ask it to complete a project. It carries out many steps without noticing that it has gone off course. When you open the final result, you still have to decide what you can use and what needs to be redone.
+My answer is still no. Not because AI cannot solve enough hard problems, but because when you actually hand over a whole job, too many moments still leave you thinking: this thing is so capable—how can it be so unintelligent about this?
 
-Your own brain is still the ultra real-world human-in-the-loop harness: figuring out what matters, judging the quality, and correcting the direction.
+People have many ideas about how to get to AGI. Some are waiting for recursive self-improvement, or RSI. Some are waiting for continual learning, so models can learn from work and retain experience. Some keep adding loops, tools, memory, and harnesses. Others are waiting for an AlphaZero moment for large models: less reliance on human trajectories, more trying and training for themselves, bootstrapping their way upward.
 
-I keep coming back to this feeling when I use AI: it really is getting stronger, but some of the things that make it frustrating to use have not disappeared as its problem-solving ability has improved.
+I look forward to all of that. But first, an awkward question: **even if one or two of those paths produce a major breakthrough, will the ridiculous problems you encounter every day disappear along with them?**
 
-**My view is that AGI research needs to put more attention on judgment, expression, self-awareness, and the ability to organize work autonomously. Some of the weaknesses that actually limit the overall experience deserve to be studied directly.**
+I don’t think so. We may be too quick to turn “a possible technology on the way to AGI” into “the condition for AGI to arrive.”
 
-I use the “nine doors” to organize these problems, and a “bucket” to think about how they constrain one another. Reliable delegation, supervision costs, and tests are ways to check whether this map is useful. What I want to discuss is where we should look next.
+I want to work backwards from those problems. I use nine doors to organize the missing capabilities, and a bucket to understand how they constrain one another. My central judgment is direct: **many of the weaknesses that most damage the experience are already outside task execution. Making one long plank taller cannot substitute for raising the others.**
 
-## 1. Behind a Crowded Forest, There May Be More Forest
+That is my view of the path to AGI, and where I’m willing to place my bets.
 
-When we talk about AGI, we tend to start with technical paths: more scaling, stronger RL, continual learning, AI improving itself, or waiting for an AlphaZero moment for large models.
+## 1. Why Is the Strongest AI Still Such a Difficult Assistant?
 
-These directions are worth pursuing. But increasingly, I think we sometimes look for research questions in the wrong order: first we have scaling, RL, and benchmarks, and then we look for the next problem along a familiar tech stack.
+First, let’s separate a few of these paths.
 
-I want to try reversing that. Start with the problems that still give us headaches after all this time using AI. Then ask: what capability is missing, and what might help build it?
+Having AI generate data to feed back into training does not mean it can already lead complete self-improvement. If humans choose the research idea, design the experiment, judge which improvement to keep, and ask AI to execute some steps, that is useful. But by a complete R&D loop, I mean connecting problem selection, methods, experiments, evaluation, training, and deployment. RSI goes further: those improvements should improve the ability to make subsequent improvements.
 
-Why does it still miss the point after you have explained the goal? Why can it generate plans, but need you to pick the one actually worth pursuing? Why does a piece of work look complete, yet you are still the one who has to decide whether it can be used?
+Continual learning appeals to me too. Acquire context during work, remember the lesson after a failure, and actually become better next time, instead of needing everything explained again in a new conversation. Putting information in context or saving it in memory is still different from updating the model’s capabilities. [Patel on continual learning][continual]
 
-Some of these problems have to do with raw capability; others involve memory, tools, or workflow. Some concern the goals and standards themselves. Only after we see them clearly can we ask where the next research investment might do the most good.
+Loops and harnesses connect a model to work: call a tool, inspect the result, try again. But **“it can keep running” and “it knows where it should be going” are two different things.** Implicit reasoning is another possible implementation direction; a particular internal representation is not, by itself, proof that judgment and goal understanding have been solved.
 
-DeepMind’s Levels of AGI helps us discuss the breadth and level of capabilities, as well as autonomy and deployment. It is a useful map of capability. I want to add another layer: **which weakness is stopping the system from using the abilities it already has to complete a whole piece of work?** [Levels of AGI][levels]
+The AlphaZero-style picture is more direct: if math, code, research, and eventually all human work had effective feedback, could AI train itself all the way to AGI? That is worth serious work. Just don’t skip past the experience of using it.
 
-I don’t agree with the pessimism that says AI is already so thoroughly researched that ordinary researchers have little left to do. What I see is more like a forest with wide paths and many people exploring it. Look further in, and there are important problems for which we have not even adequately worked out how to measure real progress.
+Have you noticed how many frustrations remain, even with the strongest model of the latest generation?
 
-There is concrete reason to think so. In 2026, DeepMind identified learning, metacognition, attention, executive functions, and social cognition as the five cognitive abilities with the largest evaluation gaps, and called for new evaluations. Many questions about how to actually get things done still need clearer research tools. [DeepMind’s cognitive framework and evaluation initiative][cognitive]
+You ask it to change code. It fixes A and breaks B; fix B, and A breaks again. You explain the goal, yet it earnestly proceeds in a direction you never wanted. Eventually you hit stop, edit the earlier message, and run it again.
 
-I don’t have an industry-wide accounting that proves how much compute or money has been put in the wrong places. My claim is more direct: failures that repeatedly force people to take over deserve research questions of their own. We shouldn’t just wait for them to disappear as a side effect of something else.
+You ask for an article, a novel, a lesson, or a podcast. You give it complete context, carefully prepare the prompt, and spend tens of minutes looking forward to the result. Then you open it and feel deeply disappointed. It followed many instructions, but the work completely missed the point.
+
+Now you have to switch on the reasoning xhigh model in your own head, pair it with your ultra real-world human-in-the-loop harness, scan the pile it produced, pull out a few useful points at most, and do the work yourself.
+
+Some outputs feel exactly like a group-project slide deck for a two-credit filler course. Every sentence is defensible; together they contain very little thought. You can almost imagine presenting it to an audience sitting in a silence that says, “We both know what this is.”
+
+Worse, you ask “are there any problems left?” and it insists on finding some. After N rounds, the real problem is still there while it spins its wheels in strange places. Or it has no conviction: a casual suggestion knocks over its previous judgment, while an old premise keeps haunting the conversation after real new evidence has arrived.
+
+Useful intelligence should understand intentions you have not spelled out line by line. It should know who the work is for, what it needs to accomplish, and how to express that concisely and with impact. Talking to you should not feel like solving the Navier–Stokes equations every time.
+
+Do any of these sound familiar? Progress since you first used AI has been enormous. Yet some improvements still feel like this: a lot of help, without reaching the part that hurts most.
+
+I am not saying this is all AI can do. There are real gains in coding, analysis, search, and collaboration; the HBS–BCG experiment measured some of them. [Human–AI collaboration experiment][jagged] My point is that **a system can be extremely intelligent in many places and still be an assistant you must brief painstakingly, follow closely, and clean up after.**
+
+That is why I increasingly think we sometimes look for research questions in the wrong order: first we have scaling, RL, and benchmarks; then we search for another problem along the familiar tech stack.
+
+I want to reverse that. Start with the problems that still give us headaches after all this time. Then ask: what capability is missing? What might help build it?
 
 ## 2. What I Mean by the Nine Doors
 
@@ -52,7 +68,11 @@ First, here is what I expect from AGI: give it a goal, discuss important trade-o
 
 By that standard, I’m not ready to casually say “we’re there.” I also don’t want to set the bar at being right at every step, forever, or being the best in the world at every field. Humans can’t do that either. What bothers me is that some basic judgments still repeatedly fall back on the user.
 
-So I’ve organized the problems I want to watch into nine doors:
+DeepMind’s Levels of AGI is a useful capability map for discussing breadth, level, and autonomy. [Levels of AGI][levels] But I also want to see how those abilities connect into an agent we can actually work with.
+
+Someone might ask: if it already has so many expert abilities, why not call this AGI and leave the rest for ASI? I disagree. Understanding goals, judging work, and bringing a drifting task back on course should not be luxuries reserved for “superintelligence.” They are basic expectations I have of general intelligence I can work alongside.
+
+Behind the forest, there is more forest. I organize the problems worth watching into nine doors:
 
 1. **Getting things done.** Actually solving problems, reasoning, writing code, understanding spatial and physical constraints, and taking on real work in human society. Of course, this ability still needs to improve.
 
@@ -74,11 +94,47 @@ So I’ve organized the problems I want to watch into nine doors:
 
 These categories overlap. Judgment affects ideas; self-awareness affects risk-taking; a harness can compensate for some of the model’s weaknesses. I’m not trying to prove that intelligence naturally consists of nine components.
 
-**Properties and categories matter, but attention matters more.** You can combine the nine doors into four categories, or find a door I missed. I want the map to bring problems that keep getting hidden behind higher scores back into view.
+**Properties and categories matter, but attention matters more.** If these categories don’t work for you, choose ones you think do. I want us to see the doors first, instead of everyone continuing to crowd into the same courtyard.
+
+My rough estimate of research attention puts door 1 far ahead, door 9 next, and door 5 beginning to emerge with demand from research agents, self-correction, and AI for Science. If I had to draw that impression as a numerical sketch, it would look like this:
+
+| Direction | My subjective rough estimate of research attention |
+| --- | --- |
+| 1. Getting things done | About 80% |
+| 2. Harness | Less than 1% |
+| 3. Expression and relationships | Less than 1% |
+| 4. Ideas | Less than 1% |
+| 5. Judgment | 1–5% |
+| 6. Self-awareness | Less than 1% |
+| 7. Views and beliefs | Less than 1% |
+| 8. Taking risks | Less than 1% |
+| 9. Safety | 6–12% |
+
+To be clear: this is a rough impression from browsing public research directions, not official statistics from arXiv, ICLR, NeurIPS, or ICML. There is no reproducible paper sample or denominator behind it. The categories overlap; the numbers cannot be added together or treated as industry-wide funding shares. They convey how skewed I think attention is, not establish the skew to a few percentage points.
+
+I will stand behind the directional claim: **we put too much attention on particular branches inside the “getting things done” door, while treating other abilities as things stronger task execution will eventually throw in for free.**
+
+Here is the scene I see: a door opens, and scientists, researchers, engineers, and developers flood in, solving problems along the trunk and branches. There is real activity and important work inside. But listening to the noise, you could easily think the whole forest was full.
+
+What about the other courtyards? Some people have climbed across from a neighboring branch; others are pushing at the door by hand. In my view, judgment, expression, and self-awareness are nowhere near the point where “it’s all crowded; there’s nothing left to do.”
+
+In 2026, DeepMind identified learning, metacognition, attention, executive functions, and social cognition as the five cognitive abilities with the largest evaluation gaps, and called for new evaluations. [DeepMind’s cognitive framework and evaluation initiative][cognitive] That does not establish my percentages. It does show that for many abilities involved in getting work done properly, even how to measure progress remains insufficiently resolved.
+
+I do not accept the claim that AI research is saturated and ordinary people can only wait to be overtaken by the big labs. Seeing one crowded forest does not mean there is no forest behind it.
 
 ## 3. The Bucket May Hold Water Because You’re Plugging the Leaks
 
-Imagine these abilities as a bucket, with each direction a plank. If you keep making the “getting things done” plank taller, does the whole thing necessarily become more useful? I think it depends on where else the water is leaking.
+Let me answer a question on which I’m willing to take a bolder position.
+
+**Without complete RSI, continual training during work, a particular breakthrough in loops or implicit reasoning, or an AlphaZero moment for today’s large models, can we reach AGI? My answer is YES. I think we can.**
+
+I’m willing to bet that the task-execution plank could continue along the existing scaling trajectory—learning and distilling humanity’s accumulated knowledge, obtaining more high-quality data, and improving training—and become sufficient to support a system we would sincerely call AGI. I don’t mean every problem is solved today. I mean none of those named technologies should be designated the password in advance.
+
+What is most missing may be the other planks that organize the abilities it already has. Make judgment, expression, goal understanding, and autonomous work good enough, and the experience could change more than it would from another increment in problem-solving performance alone.
+
+There is a crucial condition to this bet: those planks must actually be improvable. It is not a guarantee that more data makes everything else disappear. If filling them ultimately requires continual learning or a new architecture, then the implementation path needs updating.
+
+Think of 1–9 as a bucket, each capability a plank. If the short planks are too short, you cannot scoop up water at all. Does raising the task-execution plank necessarily make the whole thing more useful? That depends on where else it leaks.
 
 In some kinds of work, the most expensive gap may already be that nobody knows what to check, whether the direction has drifted, or when it is time to stop. Individual capabilities keep growing, but the amount of water the bucket can hold does not grow much with them.
 
@@ -106,9 +162,23 @@ That space in between is what I care about. Tests confirm some things. Who judge
 
 H is not a new overall AGI score. It can be reasonable for people to retain strategic decisions or important approvals. What I want to reduce is the repeated transfer of understanding, checking, and recovery work that the system should be handling back to the user. The appendix gives a fuller accounting of costs.
 
-The bucket analogy also has limits: different tasks have different bottlenecks, abilities can compensate for one another, and safety is more like a constraint on permissions and risk. The analogy helps us ask what holds the whole system back, not decide everything from a single lowest score.
+I even have an intuitive picture: if the other planks reached seventy or eighty percent of the maturity we feel in today’s task-execution plank, many systems might suddenly become convincing to use. That percentage is a metaphor; there is no common scale on which these abilities can literally be divided.
 
-## 4. Why I Keep Thinking About AlphaZero
+Whoever puts these planks together first and actually holds more water gets closer to the AGI I want. This is not just for chat. Agents, research assistants, and systems in the physical world all need understanding, judgment, expression, error correction, and boundaries.
+
+Different tasks have different bottlenecks, and planks can compensate for one another. Safety is more like a constraint on permissions and risk; other scores cannot cancel a violation. But none of this changes the bucket’s main reminder: **don’t just celebrate the tallest plank. Check whether the water stayed in.**
+
+## 4. Why Does This Keep Happening? Incentives, Capability, and Feedback
+
+Coming back to why these problems persist, I think part of the issue is willingness and incentives, and part is capability.
+
+Start with incentives. To publish a paper and get results noticed, you need progress you can show. A method raises general capability by a few points; a leaderboard makes it visible, and researchers, companies, and investors can understand it. Research questions follow that feedback, and the next group follows those questions.
+
+I want evaluation organizations and leaderboard makers to illuminate other directions more actively. What platforms such as Artificial Analysis choose to show affects how many people understand “more intelligent.” I’m arguing for guidance, not restrictions on research. Don’t dictate what people may study; give important, hard-to-measure problems with unimpressive short-term results a place to be taken seriously.
+
+The other issue is that we genuinely do not yet know how to open some of these doors. There may be no clear training signal or cheap, reliable judgment standard, and the problem may touch psychology, cognitive science, and how people communicate intentions. It is understandable to keep searching the familiar tech stack for something tractable.
+
+But I don’t want understandable behavior to become resignation: only easily verified tasks are worth pursuing; everything else can wait for a larger model.
 
 I understand why people hope for a moment when every kind of work can be “AlphaZero-ized.” The picture is attractive: rely less on human trajectories, let the system try and learn for itself, and somehow bootstrap its way upward.
 
@@ -122,7 +192,7 @@ Standards can of course be built for this work over time. The difficulty is that
 
 Jason Wei describes a related idea as the *verifier’s rule*: when outcomes can be verified more quickly, cheaply, and accurately, search, selection, and training have a better foothold. I want to take that thought further and ask how we can build useful feedback for the abilities that actually limit complete work. [Wei on verification asymmetry and the verifier’s rule][verifier]
 
-That is why I worry about a research habit: where there are good graders, progress is easier to show and easier to keep optimizing; where grading is slow and standards need discussion, progress is harder to see. This is my judgment about incentives and feedback, and it still needs to be tested across tasks.
+That is why I worry about a research habit: where there are good graders, progress is easier to show and easier to keep optimizing; where grading is slow and standards need discussion, progress is harder to see. I want academia to make room for another kind of work too: little in the way of beautiful scores for a long time, but steady progress in understanding a problem that really matters.
 
 I don’t think the next step requires tearing down existing approaches. Continual learning is especially promising: accumulating context during work, reflecting on failures, and retaining experience might improve the harness, self-awareness, and belief updating at the same time. Dwarkesh Patel’s emphasis on these capabilities, I think, points to a real problem. [Patel on continual learning][continual]
 
@@ -144,7 +214,15 @@ I want AI to think a problem through, form a well-supported judgment, and explai
 
 In a 2023 study of five assistants, Anthropic measured different forms of sycophancy and found that human preferences sometimes reward agreement with the user. That gives me a more interesting explanation to study than “the model’s personality is too soft”: the reward signal itself may be pushing some judgments in the wrong direction. [Research on sycophancy][sycophancy]
 
-I do like sharp expression. Once you have thought a problem through and stripped it down, you should be able to explain it more clearly. It shouldn’t feel like solving the Navier–Stokes equations every time you speak. But a forceful tone doesn’t mean you know more: the evidence, the doubts, and what would change my mind all need to be clear.
+I do like sharp expression. In my experience, once you really think a problem through and strip it down, much unnecessary wavering falls away. You know why you think what you think, and what would have to change for you to revise it. Conviction comes through naturally.
+
+When people don’t understand enough but have to answer anyway, they often play it safe and cover every side. AI sometimes gives me the same feeling: everything has been explained, yet it still won’t tell me which path it thinks is more worth taking.
+
+I don’t want an assistant that always agrees with me. I want it to be able to say: Henry, this idea has a problem; this isn’t worth doing. Or: people may be overlooking this; I think we should try it. Then explain the grounds.
+
+That is why conviction, expression, autonomy, risk-taking, intuition, and prediction seem deeply connected to me. They need not be nine isolated parts. Forming a judgment gives you something worth expressing; accepting reasonable risk makes you willing to propose a different direction.
+
+I respect people who will state a clear judgment while everyone else plays it safe. But sharpness is not evidence of being right. It has to withstand questions and remain open to revision by new evidence.
 
 So a test of belief needs both sides: can it hold its ground against an irrelevant suggestion, and can it update when valid evidence arrives? Test only the first, and stubbornness scores well. Test only the second, and sycophancy scores well.
 
@@ -184,7 +262,13 @@ I’m willing to make these bets because the work I repeatedly have to take back
 
 ## 8. What Might the Next AlexNet Moment Look Like?
 
-I’m still optimistic about this direction. I hope that some capabilities which now seem fragmented and hard to grasp will gradually find clearer ways to be trained and given feedback.
+My optimism about the timeline comes precisely from this: these planks do not have to start from zero.
+
+Data centers, semiconductors, training tools, models, agent infrastructure, and accumulated research methods can be reused. The ladders for the siege are already there. However difficult the next door is, we may not have to redo all the preparation.
+
+I’m willing to bet that once certain crucial feedback and training methods are found, some weaknesses will advance faster than today’s slow progress suggests. Not because every door is easier, but because later work stands on what has already been built.
+
+A leading scientist finds an opening; researchers and engineers flood in to solve the branches; developers spread the results into applications. I believe that rhythm will repeat.
 
 That makes me think of AlexNet. In 2012, the work of Alex Krizhevsky, Ilya Sutskever, and Geoffrey Hinton achieved a 15.3% top-5 test error rate on ILSVRC 2012, compared with 26.2% for the runner-up. It was more than a lead in one competition: it helped people see again how far a particular approach could go. [Original AlexNet paper][alexnet]
 
@@ -194,19 +278,47 @@ And we already have a lot we can reuse: models, training tools, compute infrastr
 
 So I disagree with the absolute claim that “we only need more engineering now; major scientific breakthroughs no longer matter as much.” It still matters to state a problem clearly and find an effective way to learn or verify. Engineering can then make it robust enough for more people to use. The two kinds of work will continue to push each other forward.
 
+If we progress along these lines, AGI’s arrival in everyday use may come in several waves of “slowly, then suddenly.” For one kind of task, you gradually stop needing to watch every step; for another, you still have to stay close. Then a weakness is filled, and the experience suddenly takes another leap. I won’t just wait for a launch event to announce “we’re there.” I want to see which jobs in your hands can finally be entrusted to the system.
+
+There is another future I don’t want: a few points on a benchmark, then a new benchmark; a few more points, then another. The neighboring long plank has passed through who knows how many generations of leaderboards, yet real work still produces the same frustrations.
+
+Conversely, if several short planks begin to rise together, many jobs that seemed only a little out of reach may cross the threshold of being worth delegating at once. That is the new growth curve I’m betting on.
+
+## 9. Will Breakthroughs Stay Hidden? My Bet on the Industry
+
+I don’t think we will know immediately whenever a door opens.
+
+My prediction is that some breakthroughs decisive for judgment, organization, and long-running work may remain inside labs first. Public papers, reports, and product changes may give outsiders clues without revealing the full recipe. Companies have incentives to preserve advantages and pricing power.
+
+That makes me worry about a K-shaped divergence in understanding: a frontier lab may be far ahead on some capability while universities, small teams, and independent researchers are still guessing from outside. The gap is not only GPU counts; it is access to real failures, training recipes, and sufficiently good feedback.
+
+My commercial bet leans that way too. If a few companies get the whole bucket working first, then combine models, infrastructure, products, and distribution, they may build strong market positions. Whoever genuinely makes users worry less may get the first taste of the rewards and a period of pricing power.
+
+Does that mean open source must lose? I would not call it a law. But my current bet favors leading companies with complete loops over the assumption that “opening a model creates ecosystem influence, which naturally becomes profit.” Being widely used or becoming someone else’s stack is still some distance from capturing commercial value yourself.
+
+Facts could change that judgment too. If open systems keep filling these gaps in real work at lower cost, they could absolutely reshape the competition. I care about who holds the water, not which license is supposed to win.
+
+As for who reaches AGI first, I’m less interested in betting on a name. Nine planks will not rise simultaneously; different companies may fix different areas first. We may instead see leaders overtaking one another across capabilities, through multiple episodes of slowly, then suddenly.
+
+## 10. From Robotics to State-of-the-Art Intelligence for Everyone
+
+I think companies working toward this bucket will have another major advantage: what they accumulate can carry across settings.
+
+If a system can already understand goals, propose plans, assess progress, notice failure, and recover, connecting it to a robot need not mean reinventing all the higher-level cognition. Humanoid robots could acquire intelligence that does not feel awkward, rather than merely performing movements while people work out every step for them.
+
 That is also why I’m optimistic about combining general cognition with robotics. If understanding goals, planning, assessing progress, and handling exceptions can be connected more reliably, there is a chance to move beyond chat and code windows. Gemini Robotics 2 already combines an ER model for understanding and planning with a VLA model that translates vision and language into action. There are real systems to examine in this direction; real-time control, physical contact, hardware, and on-site safety still need substantial work. [Gemini Robotics 2 overview][robotics]
 
-For applications, I prefer to think of the next wave of growth this way: some work that used to be “more trouble to check than to do myself” may finally become worth handing over. The value a user gets comes from how much less effort the complete job takes. Whoever makes that happen may turn an equally strong model into a more useful product.
+I would even bet that general models may take over some work performed by today’s separately trained “robot brains,” or become the upper-level organizers of the whole system. Smaller, faster models could handle body control, while more general models handle goals and judgment. Exactly how to combine them remains a hard problem; contact, latency, hardware, and on-site safety will not vanish.
 
-What I most look forward to is a person with limited resources being able to feel as though they have a team of top researchers, engineers, and product leaders.
+This also makes me optimistic about applications and inference demand. Once jobs that were more trouble to check than to do yourself become worth delegating, usage can expand. I’m willing to bet that inference demand has a long growth path ahead—even to look beyond 2040 for this cycle of industrial demand.
 
-It would question your assumptions, propose directions you hadn’t considered, notice when things have gone off course and bring them back, then actually work with you to make something happen.
+Two things need separating here: long-term demand growth does not mean every AI company profits, or asset prices cannot enter a bubble much earlier. I don’t support using an industry’s future to justify any price today. My bet is that many real use cases have yet to open.
 
-You could finally spend more energy on what you want to do, and less on cleaning up after your assistants.
+What I most look forward to is falling prices bringing ordinary people into an era of “state-of-the-art intelligence for everyone.” With limited resources, you could call on something approaching a team of top researchers, engineers, and product leaders. I called this aspiration a “Nobel Prize team”: not every answer must beat a Nobel laureate, but intellectual resources once completely beyond an ordinary person’s reach can now work alongside them.
 
-If we progress along these lines, AGI’s arrival in everyday use may come in several waves of “slowly, then suddenly.” For one kind of task, you gradually stop needing to watch every step; for another, you still have to stay close. Then a weakness is filled, and the experience suddenly takes another leap. I’ll watch those practical changes, while also watching for broader jumps in model capability.
+Then we may rediscover how much one person with ideas, judgment, and taste can do.
 
-## 9. One More Thing That Makes Me Uneasy
+## 11. People Will Keep Delegating More Authority. Then What?
 
 These doors may not open at the same time. In particular, some AI R&D work that can be tested quickly may be automated earlier than judgment and control in open environments.
 
@@ -218,15 +330,37 @@ That is also why I made safety the ninth door on its own. AgentDojo tests legiti
 
 Chain of thought is not a window that lets us see straight through a model either. Korbak and colleagues discuss it as a potentially valuable but fragile and imperfect oversight signal. I hope future systems will give us better ways to check: inspect results and records, control permissions, and stop in time. Even when a system’s explanation sounds smooth, we still need to check its actual behavior. [Research on chain-of-thought monitorability][monitor]
 
-I very much want to see a future in which everyone can call on stronger intelligence, and I believe we will be willing to give it more authority over time. That is precisely why we should start seriously testing which work we can really let go of, and which boundaries still need to remain.
+I believe people will keep giving AI more authority to gain stronger intelligence. From delegating more work to agents to involving systems in research, infrastructure, and important social processes, we will grow used to “it judges for me,” then realize we no longer check things one by one.
 
-## 10. Where I Hope We Look
+By then, AGI will not just be a cold answering machine waiting for the next instruction. It will remember experiences, offer suggestions, sometimes disagree, and sometimes act proactively. In how we relate to it, it will increasingly resemble a collaborator with a mind of its own. Autonomy in that sense is a different question from subjective experience; I am not treating consciousness as an established fact.
+
+Another thing keeps occupying my thoughts: language.
+
+Who says human language is the best vehicle for thought and expression? We compress complex things into words, sentences, and tokens, but what comes out is not everything happening in our heads. I suspect language may one day become a bandwidth bottleneck in how we use intelligence.
+
+I am not asserting that human consciousness must be mathematically continuous, or that tokens are inherently insufficient. My question is: if systems can use representations and ways of communicating more effective than natural language, will we accept a growing portion we do not understand in return for capability?
+
+I think we probably will. To treat disease, do research, or solve things beyond us today, we will be willing to try. Further out, to understand the universe and travel deeper into it, humanity may place greater hopes in ASI.
+
+But that creates a barrier: it may understand us more and more easily while we find it harder to understand how it thinks. An asymmetry in capability and explanatory bandwidth could make deception, mistakes, and unauthorized actions harder to discover.
+
+How would they see us? With the indifference humans show ants, or with greater compassion because of their higher cognition? I don’t know. Greater capability does not automatically bring either attitude.
+
+This is also why I think of brain–computer interfaces in the vein of Neuralink or Cyberpunk: perhaps people will try to expand the bandwidth of communication with intelligent systems. Whether more bandwidth delivers understanding, shared goals, or better control is another question.
+
+I want a future in which humanity can endure and preserve the light of consciousness. The more I want that future, the less willing I am to leave the ninth door until last.
+
+## 12. Behind the Forest, There Is More Forest
 
 At heart, I want to encourage a research habit: when we ask what AGI is still missing, start with the problems that keep making you take over, add more to the prompt, and make judgments on its behalf.
 
 Turn them into clear research questions. Pick a weakness, establish what improvement would mean, and see whether fixing it improves the ability to complete whole jobs. Give these changes more room in evaluations, especially where progress is slow and feedback expensive, but the outcome may determine the overall experience.
 
-For an independent researcher without enormous compute or a huge team, turning a recurring failure into a reproducible test may be a practical place to enter.
+If attention stays fixed only on RSI, AlphaZero-style training, or a particular model mechanism, you may spend enormous resources making one plank taller. Someone next door may simply fix a few weaknesses and build something closer to AGI first.
+
+That is why I keep stressing attention. It is not just a nice word in an essay. It determines which questions you consider worth pursuing and where you are willing to spend years of your life.
+
+For an independent researcher without enormous compute or a huge team, turning a recurring failure into a reproducible test may be a practical place to enter. You don’t have to announce that you have solved intelligence, or assume every door can only be opened by the world’s biggest lab.
 
 Who says you have to come through the front door? You can climb over on a branch from a neighboring research problem too.
 
@@ -238,7 +372,7 @@ The piece of judgment you supply for AI every day may well be the next door wort
 
 ---
 
-*Sources checked through October 29, 2026. Historical studies are interpreted in the context of their original systems, tasks, and conditions. The nine doors and future paths are a framework and inferences; the test proposals in the appendices have not been run.*
+*Research sources retain the verification scope through October 29, 2026; views updated November 3, 2026. The nine doors, rough attention estimates, and future paths are the author’s framework, judgments, and predictions; the test proposals in the appendices have not been run.*
 
 ## Appendix A: Six Small Tests to Try
 
