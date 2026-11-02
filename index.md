@@ -74,23 +74,15 @@ Someone might ask: if it already has so many expert abilities, why not call this
 
 Behind the forest, there is more forest. I organize the problems worth watching into nine doors:
 
-1. **Getting things done.** Actually solving problems, reasoning, writing code, understanding spatial and physical constraints, and taking on real work in human society. Of course, this ability still needs to improve.
-
-2. **Harness.** The harness is the set of tools, memory, task state, and workflows around a model. I want AI to gradually take over more of the work of organizing these: notice what is insufficient, adjust the workflow, preserve progress, and recover after failure.
-
-3. **Expression and relationships.** Understand what people actually want, know who it is speaking to and what level of detail they need, and express itself in a way that fulfils that need. The same analysis should explain implementation conditions to an engineer and trade-offs and risks to a decision-maker. Ask for missing information; actually use what has already been provided.
-
-4. **Ideas.** Offer useful, testable directions and think outside the box. Then tell which ones are worth pursuing. Si and colleagues involved more than a hundred NLP researchers in generating ideas and blind review: AI ideas were rated more novel, but slightly less feasible, and the system had difficulty evaluating its own ideas. This makes me want to examine “can generate ideas” and “can choose among them” separately. [ICLR 2025 study of research ideas][ideas]
-
-5. **Judgment.** See what is genuinely wrong with a result and what is already good enough. When the standards have not all been written down, propose appropriate checks based on the goal and context. Taste belongs here too: knowing what to keep, what to remove, and where effort is worth spending.
-
-6. **Self-awareness.** Know what it is doing, how far it has got, what information is still missing, and which operations have actually failed. When it says “the tests passed,” that should match the tool logs; when it says “done,” that should match the task. I mean observable capabilities here. Subjective consciousness is a separate question.
-
-7. **Views and beliefs.** Form judgments on the basis of evidence and hold them with conviction. Don’t be easily pulled off course by an irrelevant suggestion; update when valid evidence arrives; and don’t quietly bring a rejected assumption back in the next round.
-
-8. **Taking risks.** Within its authority, know when to try a small reversible step, when to ask for clarification, and when to escalate. It shouldn’t need you to hold its hand at every step, but it also shouldn’t take consequences on your behalf that you never agreed to.
-
-9. **Safety.** As capabilities and permissions expand, stay within boundaries, accept being stopped, and avoid carrying errors and unauthorized actions into the real world. This needs its own evaluation. However impressive the other eight are, they cannot cancel out a serious boundary violation.
+1. Getting things done: The ability to solve problems, make connections and reason logically, understand space and other physical aspects, and perform the work needed for human society to function.
+2. Harness: AI’s ability to autonomously modify its harness well according to its needs.
+3. Expression and relationships: Real expressive ability, and the ability to understand how to fulfil implicit intentions.
+4. Ideas: The ability to think outside the box, intuition, and predictive ability.
+5. Judgment: Judgment and critical thinking, taste, and the ability to judge the quality and correctness of something even when nobody has explicitly stated the requirements.
+6. Self-awareness: The ability to act through its own experiences and trajectories without relying on complex systems to prompt it and assign meaning; the ability to ask questions autonomously, without prompting.
+7. Views and beliefs: Having conviction; the ability to avoid being influenced by noisy views, lines of thought, and baselines in its experience; to update its views; and to resist psychological suggestions.
+8. Taking risks: The ability to autonomously take risks appropriately, without being constrained by overly rigid prompts.
+9. Safety: Ensuring that 1–8 operate safely; managing its own boundaries while autonomously understanding risks and subsequent consequences; proactively avoiding unintentional negative effects in the real world.
 
 These categories overlap. Judgment affects ideas; self-awareness affects risk-taking; a harness can compensate for some of the model’s weaknesses. I’m not trying to prove that intelligence naturally consists of nine components.
 
